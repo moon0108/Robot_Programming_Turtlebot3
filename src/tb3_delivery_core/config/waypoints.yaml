@@ -1,0 +1,23 @@
+station:
+  frame_id: map
+  x: 0.0
+  y: 0.0
+  yaw: 0.0
+
+container1:
+  frame_id: map
+  x: 1.0
+  y: 0.0
+  yaw: 0.0
+
+container2:
+  frame_id: map
+  x: 1.5
+  y: 0.5
+  yaw: 1.57
+
+container3:
+  frame_id: map
+  x: 1.5
+  y: -0.5
+  yaw: -1.57

@@ -1,0 +1,13 @@
+# Goal
+# feedback_period_sec <= 0.0 uses the server default.
+float32 feedback_period_sec
+---
+# Result
+bool all_filled
+string final_status_json
+string message
+---
+# Feedback
+bool all_filled
+float32 progress
+string current_status_json

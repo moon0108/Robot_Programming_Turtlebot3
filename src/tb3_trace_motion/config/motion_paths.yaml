@@ -1,0 +1,36 @@
+paths:
+  station_to_container1:
+    - type: move
+      distance: 0.30
+      speed: 0.05
+    - type: rotate
+      angle: 1.57
+      angular_speed: 0.25
+  station_to_container2:
+    - type: wait
+      duration: 0.0
+  station_to_container3:
+    - type: wait
+      duration: 0.0
+  container1_to_station:
+    - type: rotate
+      angle: -1.57
+      angular_speed: 0.25
+    - type: move
+      distance: 0.30
+      speed: 0.05
+  container2_to_station:
+    - type: wait
+      duration: 0.0
+  container3_to_station:
+    - type: wait
+      duration: 0.0
+  test_forward_back:
+    - type: move
+      distance: 0.20
+      speed: 0.05
+    - type: wait
+      duration: 1.0
+    - type: move
+      distance: -0.20
+      speed: 0.05

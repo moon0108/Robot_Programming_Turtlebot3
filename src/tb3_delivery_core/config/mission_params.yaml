@@ -1,0 +1,23 @@
+nav_timeout_sec: 90.0
+movement_mode: trace
+motion_timeout_sec: 120.0
+
+aruco_center_x_tolerance_m: 0.02
+aruco_z_diff_tolerance_m: 0.01
+aruco_target_center_z_m: 0.60
+aruco_center_z_tolerance_m: 0.04
+aruco_center_x_offset_m: -0.01
+aruco_required_stable_count: 5
+aruco_timeout_sec: 30.0
+aruco_use_controller_status: true
+
+pickup_linear_x: 0.04
+pickup_duration_sec: 1.5
+
+lift_action_delay_sec: 3.4
+
+object_wait_timeout_sec: 30.0
+min_yolo_confidence: 0.3
+yolo_duplicate_window_sec: 0.1
+
+status_publish_period_sec: 1.0

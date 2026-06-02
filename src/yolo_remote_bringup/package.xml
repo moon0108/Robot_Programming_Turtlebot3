@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>yolo_remote_bringup</name>
+  <version>0.0.0</version>
+  <description>Remote YOLO image pipeline launch</description>
+  <maintainer email="yoon@example.com">yoon</maintainer>
+  <license>Apache-2.0</license>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>image_transport</exec_depend>
+  <exec_depend>compressed_image_transport</exec_depend>
+  <exec_depend>rqt_image_view</exec_depend>
+  <exec_depend>yolo_v8_ros</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

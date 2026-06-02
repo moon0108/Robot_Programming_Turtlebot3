@@ -1,0 +1,90 @@
+aruco_pose:
+  ros__parameters:
+    image_topic: /camera/image_decompressed
+    camera_info_topic: /camera/camera_info
+    annotated_topic: /aruco/annotated_image
+    align_error_topic: /aruco/align_error
+    active_topic: /aruco_align/active
+    shutdown_topic: /aruco_align/shutdown
+    dictionary: DICT_4X4_50
+    marker_size: 0.015
+    marker_ids: "0,1"
+    min_valid_pose_distance: 0.01
+    use_fallback_camera_info: false
+    fallback_fx: 554.38271282
+    fallback_fy: 554.38271282
+    fallback_cx: 320.5
+    fallback_cy: 240.5
+    log_only_when_active: true
+    process_only_when_active: true
+    pose_hold_sec: 0.8
+    # detector_upscale: 1.0
+    # equalize_histogram: false
+    # adaptive_thresh_win_size_min: 3
+    # adaptive_thresh_win_size_max: 23
+    # adaptive_thresh_win_size_step: 4
+    # adaptive_thresh_constant: 7.0
+    # min_marker_perimeter_rate: 0.008
+    # max_marker_perimeter_rate: 4.0
+    # polygonal_approx_accuracy_rate: 0.05
+    # min_corner_distance_rate: 0.02
+    # min_distance_to_border: 2
+    # corner_refinement: false
+    # corner_refinement_win_size: 5
+    # corner_refinement_max_iterations: 30
+    # corner_refinement_min_accuracy: 0.01
+
+aruco_align_controller:
+  ros__parameters:
+    align_error_topic: /aruco/align_error
+    active_topic: /aruco_align/active
+    shutdown_topic: /aruco_align/shutdown
+    done_topic: /aruco_align/done
+    status_topic: /aruco_align/status
+    odom_topic: /odom
+    cmd_vel_topic: /cmd_vel
+    enable_motion: true
+    start_active: false
+    target_distance: 0.20
+    align_start_distance: 1.0
+    z_diff_threshold: 0.01
+    center_x_threshold: 0.015
+    center_x_offset: 0.0
+    distance_threshold: 0.04
+    odom_step_distance_threshold: 0.05
+    min_valid_marker_distance: 0.05
+    z_diff_gain: 2.0
+    max_yaw_align_speed: 0.12
+    center_x_gain: 1.0
+    max_centering_angular_speed: 0.25
+    distance_gain: 0.35
+    approach_linear_speed: 0.06
+    single_marker_x_gain: 0.6
+    single_marker_search_angular_speed: 0.10
+    single_marker_hold_distance: 0.2
+    left_marker_id: 0
+    right_marker_id: 1
+    enable_odom_steps: true
+    odom_turn_gain: 1.4
+    odom_turn_tolerance: 0.04
+    odom_drive_speed: 0.14
+    odom_drive_tolerance: 0.015
+    min_odom_drive_speed: 0.04
+    odom_step_distance_scale: 1.0
+    min_odom_step_distance: 0.005
+    max_odom_step_distance: 0.8
+    max_odom_step_heading: 0.55
+    lateral_odom_step_heading: 0.75
+    reverse_step_distance: 0.08
+    search_linear_speed: 0.0
+    search_angular_speed: 0.0
+    linear_direction: 1.0
+    angular_direction: 1.0
+    max_linear_speed: 0.12
+    max_angular_speed: 0.35
+    control_rate_hz: 15.0
+    status_publish_period_sec: 0.5
+    debug_log_period_sec: 0.5
+    marker_timeout_sec: 1.0
+    zero_cmd_publish_count: 5
+    zero_cmd_publish_period_sec: 0.02
